@@ -1,0 +1,9 @@
+mvn archetype:generate
+ -DgroupId=testing
+ -DartifactId=testing
+ -DarchetypeArtifactId=maven-archetype-quickstart
+
+mvn compile
+mvn package
+java -cp .\testing-1.0-SNAPSHOT.jar testing.App
+
